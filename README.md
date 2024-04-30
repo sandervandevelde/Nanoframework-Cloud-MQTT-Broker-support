@@ -28,6 +28,10 @@ This new EventGrid namespace feature is now demonstrated too (you need to update
 
 Notice the willRetain flag is set to false. That feature is not supported yet by the EventGrid namespace.
 
+If the device connection is interrupted (eg. power is down) a message like this is shown:
+
+![image](https://github.com/sandervandevelde/Nanoframework-Cloud-MQTT-Broker-support/assets/694737/6ebe2699-bb99-44a3-b95a-d5af9d0e5b78)
+
 ## Links
 
 A demonstration of how to set up the MQTT Broker in Event Grid is seen [here](https://sandervandevelde.wordpress.com/2023/10/14/a-first-look-at-azure-eventgrid-mqtt-support/)
