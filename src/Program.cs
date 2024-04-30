@@ -22,6 +22,7 @@ namespace NFMqttClientApp
 		private const string c_BROKERHOSTNAME = "youreventgrid.westeurope-1.ts.eventgrid.azure.net";
 		private const int c_PORT = 8883;
 		private const string c_PUB_TOPIC = "message/fromnanoframework";
+//		private const string c_PUB_TOPIC_LWT = "message/fromnanoframework/alert";
 		private const string c_SUB_TOPIC = "message/device/#";
 
 		public static void Main()
@@ -55,8 +56,8 @@ namespace NFMqttClientApp
 			while (true)
 			{
 				string payload = $"{{\"counter\":{counter++}}}";
-				device.Publish(c_PUB_TOPIC, Encoding.UTF8.GetBytes(payload), "application/json; charset=utf-8", null);
-				Debug.WriteLine($"Message sent: {payload}");
+				var result = device.Publish(c_PUB_TOPIC, Encoding.UTF8.GetBytes(payload), "application/json; charset=utf-8", null);
+				Debug.WriteLine($"Message sent ({result}): {payload}");
 				Thread.Sleep(10000);
 			}
 		}
@@ -69,7 +70,11 @@ namespace NFMqttClientApp
 			{
 				try
 				{
+					// Regular connect
 					var resultConnect = device.Connect(c_DEVICEID, c_USERNAME, "");
+
+					// Connect with Last will & testament. At this moment, willRetain is not supported yet by the EventGrid so keep that at 'false'.
+//					var resultConnect = device.Connect(c_DEVICEID, c_USERNAME, "", false, MqttQoSLevel.AtLeastOnce, true, c_PUB_TOPIC_LWT, "unexpected disconnect", true, 30);
 
 					if (resultConnect != MqttReasonCode.Success)
 					{
@@ -103,7 +108,7 @@ namespace NFMqttClientApp
 		{
 			Debug.WriteLine("Client_ConnectionClosed");
 
-			TryToConnect();
+//			TryToConnect();
 		}
 
 		private static void Client_ConnectionOpened(object sender, ConnectionOpenedEventArgs e)
