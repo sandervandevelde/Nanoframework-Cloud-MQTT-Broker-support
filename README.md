@@ -1,6 +1,6 @@
-# Nanoframework-Cloud-MQTT-Broker-support
+# .NET nanoframework Cloud-MQTT-Broker-support
 
-Nanoframework demonstration as a client for Azure EventGrid support for MQTT 
+.NET nanoframework demonstration as a client for Azure EventGrid support for MQTT 
 
 ## Introduction
 
