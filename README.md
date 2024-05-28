@@ -35,7 +35,7 @@ If the device connection is interrupted (eg. power is down) a message like this 
 
 ## Links
 
-A demonstration of how to set up the MQTT Broker in Event Grid is seen [here](https://sandervandevelde.wordpress.com/2023/10/14/a-first-look-at-azure-eventgrid-mqtt-support/)
+An introduction of how to set up the MQTT Broker in Event Grid is seen [here](https://sandervandevelde.wordpress.com/2023/10/14/a-first-look-at-azure-eventgrid-mqtt-support/).
 
 ## Credits
 
