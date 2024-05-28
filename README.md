@@ -1,4 +1,4 @@
-# .NET nanoframework app with Azure EventGrid namespace MQTT support
+# .NET nanoframework app with Azure EventGrid Namespace MQTT support
 
 This .NET nanoframework demonstration app acts like a client for Azure EventGrid support for MQTT.
 
