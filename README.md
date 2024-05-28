@@ -1,6 +1,6 @@
-# .NET nanoframework app with Azure EventGrid Namespace MQTT support
+# .NET nanoFramework app with Azure EventGrid Namespace MQTT support
 
-This .NET nanoframework demonstration app acts like a client for Azure EventGrid support for MQTT.
+This .NET nanoFramework demonstration app acts like a client for Azure EventGrid support for MQTT.
 
 this Visual Studio project demonstrates how to connect to the EventGrid cloud MQTT broker for:
 
@@ -35,7 +35,7 @@ If the device connection is interrupted (eg. power is down) a message like this 
 
 ## Links
 
-An introduction of how to set up the MQTT Broker in Event Grid is seen [here](https://sandervandevelde.wordpress.com/2023/10/14/a-first-look-at-azure-eventgrid-mqtt-support/).
+An introduction to how to set up the MQTT Broker in Event Grid is seen [here](https://sandervandevelde.wordpress.com/2023/10/14/a-first-look-at-azure-eventgrid-mqtt-support/).
 
 ## Credits
 
