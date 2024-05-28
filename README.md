@@ -1,8 +1,9 @@
-# .NET nanoframework Cloud-MQTT-Broker-support
+# .NET nanoframework demonstration app with Azure EventGrid namespace MQTT support
 
-This .NET nanoframework demonstration acts like a client for Azure EventGrid support for MQTT.
+This .NET nanoframework app acts like a client for Azure EventGrid support for MQTT.
 
 this Visual Studio project demonstrates how to connect to the EventGrid cloud MQTT broker for:
+
 - Connect
 - Send data to a topic
 - Receive data on a topic
@@ -16,7 +17,7 @@ Read the full story in this [blog post](https://sandervandevelde.wordpress.com/2
 
 ## Certificates
 
-You need three certificates to both secure the TLS communication and to proof the identity:
+You need three certificates to both secure the TLS communication and to prove the identity:
 
 1. The public TLS certificated for the connection to the broker based on [DigiCert Global Root G3](https://www.digicert.com/kb/digicert-root-certificates.htm)
 2. Private client certificate
