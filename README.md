@@ -11,12 +11,7 @@ this Visual Studio project demonstrates how to connect to the EventGrid cloud MQ
 
 If everything is set up correctly and rolled out on a constrained device like an ESP32, you get a flow like this:
 
-
 ![image](assets/dotnet-nanoframework-flow.png)
-
---
-
-![image](https://github.com/sandervandevelde/Nanoframework-Cloud-MQTT-Broker-support/assets/694737/e2d723ca-5da6-4243-b136-852aa5056519)
 
 Read the full story in this [blog post](https://sandervandevelde.wordpress.com/2024/04/16/connect-esp32-to-eventgrid-over-mqtt-with-nanoframework/).
 
